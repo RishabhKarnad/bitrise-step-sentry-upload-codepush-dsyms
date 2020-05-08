@@ -5,6 +5,6 @@ set -e
 set -x
 
 # upload iOS source maps to Sentry
-export SENTRY_PROPERTIES=$SENTRY_PROPERTIES_PATH
-export APPCENTER_ACCESS_TOKEN=$APPCENTER_API_TOKEN
-./node_modules/@sentry/cli/bin/sentry-cli react-native appcenter $OPTIONS $APPCENTER_APP_ID $REACT_NATIVE_PLATFORM $REACT_NATIVE_BUILD_DIR/CodePush
+export SENTRY_PROPERTIES=$sentry_properties_path
+export APPCENTER_ACCESS_TOKEN=$api_token
+./node_modules/@sentry/cli/bin/sentry-cli react-native appcenter $options $app_id $platform $build_dir/CodePush
